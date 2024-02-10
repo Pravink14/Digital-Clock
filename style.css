@@ -1,0 +1,97 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box::before
+{
+    content: "DIGITAL  CLOCK";
+    letter-spacing: 5px;
+    height: 50px;
+    width: 100px;
+    padding: 30px;
+    font-size: 50px;
+    margin-left: 170px;
+    color: white;
+    text-shadow: none;
+}
+
+.box
+{
+    width: 800px;
+    height: 180px;
+    color:#27dfd3;
+    text-shadow: 1px 1px 5px #27dfd3;
+    user-select: none;
+}
+
+.clock
+{
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.clock span 
+{
+    font-size: 80px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+#day
+{
+    font-size: 15px;
+    bottom:50px ;
+    right: 10px;
+    letter-spacing: 2px;
+}
+
+#ampm
+{
+    font-size: 25px;
+    top: 15px;
+    letter-spacing: 2px;
+}
+
+.clock span::after
+{
+    font-size: 20px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 2px;
+}
+
+#hours::after{
+    content: 'HOURS';
+}
+
+#mins::after{
+    content: 'MINS';
+}
+
+#seconds::after{
+    content: 'SECS';
+}
